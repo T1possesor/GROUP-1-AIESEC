@@ -1,0 +1,107 @@
+.hoatdongkh-page {
+    padding: 2rem;
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .add-activity-form {
+        max-width: 600px;
+
+        // ✅ Dồn form sang bên trái
+        margin: 0 0 2rem 0;
+
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    .search-group-box {
+    background: #ffffff;
+    padding: 1rem;
+
+    border-radius: 10px;
+    margin-bottom: 0rem;
+    max-width: 500px; // ✅ Rút ngắn chiều ngang
+    width: 100%;
+
+    h4 {
+        margin-bottom: 0.5rem;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .search-row {
+        display: flex;
+        gap: 10px;
+
+        input {
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+
+            &:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+            }
+        }
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+}
+
+    .hoatdongkh-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+    }
+}

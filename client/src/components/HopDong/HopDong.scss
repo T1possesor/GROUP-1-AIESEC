@@ -1,0 +1,294 @@
+.hopdong-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-align: center;
+    }
+
+    .rating-box {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 6px;
+    }
+
+    .rating-box textarea {
+        width: 100%;
+        height: 80px;
+        padding: 8px;
+        resize: none;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .rating-box .stars {
+        margin-bottom: 10px;
+    }
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  .payment-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.3s ease-in-out;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select,
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .result-message {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: bold;
+
+      &.success {
+        background-color: #d4edda;
+        color: #155724;
+      }
+
+      &.error {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+
+      button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &.confirm {
+          background-color: #28a745;
+          color: white;
+          margin-right: 10px;
+        }
+
+        &.cancel {
+          background-color: #6c757d;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+    .form-add-contract {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 30px auto;
+
+    h3 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 22px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6px;
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    }
+
+    .submit-button {
+        width: 100%;
+        background-color: #28a745;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: #218838;
+        }
+    }
+}
+
+    .rating-box .stars span {
+        display: inline-block;
+        font-size: 40px !important;
+        cursor: pointer;
+        color: gold;
+        margin-right: 4px;
+        line-height: 1;
+    }
+
+    .contract-table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+        th, td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #2980b9;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        tbody tr {
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+
+        td {
+            color: #2d3436;
+        }
+    }
+
+    .review-popup {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 24px 28px;
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        max-width: 400px;
+        width: 90%;
+        animation: fadeIn 0.3s ease-in-out;
+        font-family: "Segoe UI", sans-serif;
+
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .stars {
+            font-size: 24px;
+            color: gold;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            white-space: pre-wrap;         // 👈 Cho phép xuống dòng với \n
+        word-break: break-word;        // 👈 Tự động xuống dòng nếu quá dài
+        overflow-wrap: break-word;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -10%);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+    }
+}

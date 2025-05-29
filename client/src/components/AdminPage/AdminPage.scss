@@ -1,0 +1,184 @@
+.admin-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+    .admin-header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .admin-content {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .admin-section {
+        margin-bottom: 20px;
+    }
+
+    .stats-grid {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .stat-card {
+        background-color: #e7f3e7;
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100px;
+    }
+
+    .actions-grid {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .action-button {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #45a049;
+        }
+    }
+
+    .product-table, .order-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        text-align: center;
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: #f4f4f4;
+            z-index: 1;
+        }
+    }
+
+    .order-details-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .filter-container {
+        margin-bottom: 10px;
+
+        label {
+            margin-right: 10px;
+        }
+    }
+
+    .chart-container {
+        margin-bottom: 20px;
+    }
+
+    .admin-img-container {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .table-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .add-product-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 0;
+
+        &:hover {
+            background-color: #45a049;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 10px;
+
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            textarea {
+                height: 100px;
+                resize: vertical;
+            }
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #45a049;
+            }
+        }
+    }
+    
+    .table-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}

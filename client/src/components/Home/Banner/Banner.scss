@@ -1,0 +1,99 @@
+@import "../../../css-config/mixins.scss";
+
+.hero-banner {
+    padding: 40px 0;
+    position: relative;
+    background-image: linear-gradient(to right, #ee8765, #FFECD2);
+
+    @include md {
+        height: calc(100vh - 80px);
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+
+        .pic11 {
+            position: relative;
+            z-index: 9;
+            width: 180px;
+            margin-bottom: 20px;
+
+            @include md {
+                width: 250px;
+                margin-bottom: 40px;
+                margin-top: 20px;
+            }
+
+            @include xxl {
+                width: 200px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .text-content {
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include md {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 160px;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 20px;
+
+                @include md {
+                    font-size: 100px;
+                }
+            }
+
+            p {
+                max-width: 600px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 30px;
+
+                @include md {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+
+            .ctas {
+                display: flex;
+                justify-content: center;
+                gap: 70px;
+
+                .banner-cta {
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border: 2px solid white;
+                    padding: 14px 80px;
+                    border-radius: 50px;
+                    cursor: pointer;
+
+                    &.v2 {
+                        background-color: white;
+                        color: black;
+                    }
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}

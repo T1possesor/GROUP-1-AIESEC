@@ -1,0 +1,114 @@
+.dexuat-giaovien {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 30px;
+
+        label {
+            white-space: nowrap;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #2980b9;
+            }
+        }
+    }
+
+    .email-form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: #27ae60;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        max-width: 1000px;
+        border-collapse: collapse;
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td button {
+            padding: 6px 12px;
+            margin-right: 6px;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        td button:first-child {
+            background-color: #27ae60;
+
+            &:hover {
+                background-color: #219150;
+            }
+        }
+
+        td button:nth-child(2) {
+            background-color: #3498db;
+
+            &:hover {
+                background-color: #2c80b4;
+            }
+        }
+    }
+}

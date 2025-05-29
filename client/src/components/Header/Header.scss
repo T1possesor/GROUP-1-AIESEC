@@ -1,0 +1,160 @@
+@import "../../css-config/mixins.scss";
+
+.main-header {
+    width: 100%;
+    padding: 0 20px;
+    background-color: #212121;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+    @include md {
+        padding: 0 40px;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        max-width: 1800px;
+        margin: 0 auto;
+
+        @include md {
+            height: 80px;
+        }
+
+        .left {
+            list-style-type: none;
+            display: none;
+            gap: 25px;
+
+            @include md {
+                 gap: 50px;
+                display: flex;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                .logo {
+                    width: 200px; // Adjust as necessary
+                    height: auto;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .create-quotation-button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    
+}
+
+
+
+        .center {
+            font-size: 22px;
+            font-weight: 700;
+            cursor: pointer;
+
+            @include md {
+                font-size: 34px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            @include md {
+                gap: 37px;
+            }
+
+            div {
+        font-size: 16px; // 👈 tăng cỡ chữ ở đây
+        font-weight: 600;
+        color: white;
+
+        @include md {
+            font-size: 20px; // hoặc lớn hơn nếu bạn muốn
+            font-weight: bold;
+        }
+    }
+            svg {
+                font-size: 20px;
+                cursor: pointer;
+
+                @include md {
+                    font-size: 24px;
+                }
+            }
+
+            .cart-icon {
+                position: relative;
+
+                span {
+                    min-width: 20px;
+                    text-align: center;
+                    background-color: #8e2de2; // Đổi màu thông báo của icon bán hàng
+                    padding: 2.5px;
+                    position: absolute;
+                    top: -5px;
+                    right: -12px;
+                    font-size: 12px;
+                    line-height: 1;
+                    border-radius: 10px;
+                }
+            }
+
+            .user-icon {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .welcome-message {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-right: -140px; // Tạo khoảng cách giữa các phần tử
+                margin-left: 80px;
+                @include md {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &.sticky-header {
+        position: sticky;
+        top: 0;
+        transform: translateY(-80px);
+        animation: stickyHeader 0.3s ease forwards;
+    }
+}
+
+@keyframes stickyHeader {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

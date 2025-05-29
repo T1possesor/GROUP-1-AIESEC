@@ -1,0 +1,40 @@
+/* Declaration for Poetsen One font */
+@font-face {
+  font-family: 'Poetsen One';
+  src: url('./PoetsenOne-Regular.ttf') format('truetype'); /* Ensure the file path is correct */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Declaration for Sedan SC font */
+@font-face {
+  font-family: 'Sedan SC'; /* Ensure consistency in naming */
+  src: url('./SedanSC-Regular.ttf') format('truetype'); /* Ensure the file path is correct and added '-Regular' assuming the file name */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  border-top-color: #fff;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

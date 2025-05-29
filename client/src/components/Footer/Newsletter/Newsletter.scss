@@ -1,0 +1,117 @@
+@import "../../../css-config/mixins.scss";
+
+.newsletter-section {
+    width: 100%;
+    height: auto; // cho phép chiều cao tự động theo nội dung
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #f9f9f9 url("../../../assets/newsletter-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .newsletter-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .small-text {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .big-text {
+            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0 20px;
+            @include md {
+                font-size: 28px;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            input, textarea {
+                width: 100%;
+                max-width: 500px;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                padding: 0 12px;
+                font-size: 16px;
+                outline: none;
+                margin-left: 40px;
+            }
+
+            textarea {
+    resize: none; // Không cho phép kéo giãn
+    padding: 10px 12px;
+    height: 100px;
+}
+
+
+            button {
+                align-self: center;
+                outline: none;
+                border: none;
+                height: 40px;
+                width: 160px;
+                background-color: #8e2de2;
+                border-bottom: 3px solid #6516aa;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #6516aa;
+                }
+            }
+        }
+
+        .text {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                background: rgba(0, 0, 0, 0.8);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+}

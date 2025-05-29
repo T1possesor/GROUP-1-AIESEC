@@ -1,0 +1,64 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal; // ⬅️ Bỏ chữ nghiêng cho toàn bộ nội dung
+
+    h2 {
+        text-align: left;
+        font-size: 26px;
+        margin-bottom: 25px;
+        color: #2c3e50;
+        font-style: normal; // ⬅️ Bỏ nghiêng
+    }
+
+    p {
+        text-align: left;
+        font-style: normal; // ⬅️ Bỏ nghiêng
+        color: #333;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            transition: all 0.2s ease;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            font-style: normal; // ⬅️ Bỏ nghiêng
+
+            &:hover {
+                background-color: #f0f8ff;
+                border-color: #1abc9c;
+            }
+
+            strong {
+                color: #000; // ⬅️ Màu đen cho tiêu đề
+                font-weight: bold;
+                font-size: 16px;
+                font-style: normal;
+            }
+
+            b {
+                color: #000; // ⬅️ Màu đen cho phần trạng thái khách
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            br {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
